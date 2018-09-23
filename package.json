@@ -1,17 +1,19 @@
 {
-  "name": "challenge",
+  "name": "chanllege",
   "version": "1.0.0",
-  "description": "Shopify challenge",
+  "description": "",
   "main": "main.js",
-  "homepage": "https://github.com/VinciLin/task.git",
   "scripts": {
-    "sass": "",
-    "deploy": "gh-pages -d dist"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Fangyuan Lin",
-  "license": "MIT",
-  "dependencies": {
-    "gh-pages": "^1.2.0",
-    "node-sass": "^4.9.2"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinciLin/task.git"
+  },
+  "author": "fangyuan lin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VinciLin/task/issues"
+  },
+  "homepage": "https://github.com/VinciLin/task#readme"
 }
