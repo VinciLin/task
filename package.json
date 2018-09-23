@@ -1,0 +1,17 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "Shopify challenge",
+  "main": "main.js",
+  "homepage": "https://github.com/VinciLin/task.git",
+  "scripts": {
+    "sass": "",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Fangyuan Lin",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^1.2.0",
+    "node-sass": "^4.9.2"
+  }
+}
