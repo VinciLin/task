@@ -1,0 +1,373 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* my code */
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco";
+}
+
+* {
+  text-decoration: none;
+}
+
+#SvgLogoAcmeStack {
+  width: 10%;
+  height: 10%;
+}
+
+header {
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+}
+
+header .header-brand {
+  font-size: 24px;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+header nav ul {
+  display: block;
+  margin: 16px auto;
+  width: fit-content;
+}
+
+header nav ul li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 0 16px;
+}
+
+header nav ul li a {
+  font-size: 16px;
+  color: #111;
+  text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+  color: #7e24fa;
+}
+
+header .header-cases {
+  display: none;
+}
+
+/* main start */
+
+.index-banner {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url(/images/banner-purple.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 10px;
+}
+
+.index-banner h2 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 100px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.index-banner h1 {
+  font-size: 28px;
+  font-weight: 100;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+/* login start */
+.login-form {
+  border: 1px solid #6624d2;
+  box-shadow: 2px 2px 8px #111;
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.login-form input,
+button {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 50px;
+  border: none;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.login-form input {
+  border-bottom: 1px solid #f4ecff;
+}
+
+.login-form button {
+  background-color: #6624d2;
+}
+
+/* checkbox start */
+label {
+  color: #fff;
+  font-size: px;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  margin-top: 20px;
+  width: 20px;
+  height: 20px;
+  background-clip: content-box;
+  background-color: #fff;
+  color: #fff;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-color: #6624d2;
+}
+
+#SvgIconLoading {
+  display: none;
+  margin: 0 auto;
+}
+#login {
+  color: #fff;
+  font-weight: 700;
+}
+/* login end */
+
+/* social media */
+
+#SvgLogoFacebook,
+#SvgLogoGoogle,
+#SvgLogoTwitter {
+  width: 25%;
+  height: 25%;
+}
+
+.social-media {
+  width: calc(100% - 80px);
+  padding: 40px 40px;
+  margin-top: 20px;
+}
+
+.social-media ul li {
+  width: 30%;
+  float: right;
+}
+/* destop */
+
+@media only screen and (min-width: 1024px) {
+  header .header-brand {
+    margin: 20px 0;
+    float: left;
+    /* line-height: 38px; */
+    padding: 0 20px 0 40px;
+    border-right: 3px solid #7e24fa;
+  }
+
+  #SvgLogoAcmeStack {
+    width: 20%;
+    height: 20%;
+  }
+
+  header nav ul {
+    float: left;
+    margin: 20px 0px 0px 100px;
+  }
+
+  header nav ul li a {
+    line-height: 72px;
+  }
+
+  .index-banner h2 {
+    font-size: 64px;
+    line-height: 200px;
+  }
+
+  .index-banner h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  header .header-cases {
+    display: inline-block;
+    background: linear-gradient(45deg, #7e24fa, #caaef2);
+    border-radius: 28px;
+    color: #fff;
+    padding: 10px 26px;
+    margin-top: 35px;
+    display: inline-block;
+    font-size: 17px;
+    float: right;
+  }
+
+  .login-form {
+    margin-top: 60px;
+    width: 40%;
+  }
+
+  .login-form input,
+  button {
+    height: 70px;
+    font-size: 24px;
+  }
+
+  #SvgLogoFacebook,
+  #SvgLogoGoogle,
+  #SvgLogoTwitter {
+    width: 5%;
+    height: 5%;
+  }
+
+  .social-media {
+    margin-top: 80px;
+  }
+
+  .social-media ul li {
+    width: 30%;
+    /* float: right; */
+  }
+}
